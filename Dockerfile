@@ -1,6 +1,7 @@
-FROM debian:jessie-slim
+FROM debian:bookworm-slim
 
-LABEL maintainer "Viktor Adam <rycus86@gmail.com>"
+LABEL maintainer="Cappy Ishihara <cappy@cappuchino.xyz>"
+LABEL org.opencontainers.image.source="https://github.com/KessokuNet/docker-ddclient" 
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update  \
